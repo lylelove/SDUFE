@@ -4,7 +4,9 @@
 name: Python application
 
 on:
-  
+  schedule:
+  # 定时任务，在每天的5点推送天气信息到邮箱
+    - cron: '0 21 * * *'
   push:
     branches: [ main ]
   pull_request:
@@ -18,7 +20,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.9
-      uses: actions/setup-python@v2
       with:
         python-version: 3.9
     - name: Install dependencies
