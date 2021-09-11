@@ -37,6 +37,7 @@ jobs:
       # Runs a set of commands ing the runners shell
       - name: Run a multi-line script
         run: |
+          (conda) activate env-name
           python3
           from main import test
           test(${{ secrets.YOUR_NUMBER }},${{ secrets.YOUR_CARD }},${{ secrets.YOUR_BASICINFO }})
