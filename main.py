@@ -99,3 +99,4 @@ basicinfo = 'name=%E5%88%98%E8%80%98%E9%BA%9F&sex=1&study_id=20190611509&college
 cookies = getcookie(headers)
 login(cookies, headers, number, card)
 register(cookies, headers, basicinfo)
+exit()
