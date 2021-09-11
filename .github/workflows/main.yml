@@ -11,7 +11,7 @@ on:
     branches: [ main ]
   schedule:
   # 定时任务，在每天的5点推送天气信息到邮箱
-    - cron: '0 21 * * *'
+    - cron: '0 1 * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -37,7 +37,5 @@ jobs:
       # Runs a set of commands ing the runners shell
       - name: Run a multi-line script
         run: |
-          python3
-          from main import test
-          test(${{ secrets.YOUR_NUMBER }},${{ secrets.YOUR_CARD }},${{ secrets.YOUR_BASICINFO }})
-          exit()
+          python3 main.py
+
