@@ -88,13 +88,6 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gec
            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Host': 'bcfl.sdufe.edu.cn',
            'Accept': '*/*'}
 
-# 以下内容请自行修改
-number = ${{ secrets.YOUR_NUMBER }}
-#学号
-card = ${{ secrets.YOUR_CARD }}
-#密码，一般为身份证后六位
-# 打卡基础信息，必填！
-basicinfo = ${{ secrets.YOUR_BASICINFO }}
 
 cookies = getcookie(headers)
 login(cookies, headers, number, card)
