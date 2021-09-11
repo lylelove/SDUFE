@@ -41,5 +41,3 @@ jobs:
           from main import test
           test(${{ secrets.YOUR_NUMBER }},${{ secrets.YOUR_CARD }},${{ secrets.YOUR_BASICINFO }}
           exit()
-          #!/usr/bin/env python
-          python3 main.py
