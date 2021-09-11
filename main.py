@@ -88,9 +88,9 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gec
            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Host': 'bcfl.sdufe.edu.cn',
            'Accept': '*/*'}
 
-number = os.environ.get('number')
-card = os.environ.get('card')
-basicinfo = os.environ.get('basicinfo')
+number = os.environ.get('$number')
+card = os.environ.get('$card')
+basicinfo = os.environ.get('$basicinfo')
 
 cookies = getcookie(headers)
 login(cookies, headers, number, card)
