@@ -39,5 +39,5 @@ jobs:
         run: |
           python3
           from main import test
-          test(${{ secrets.YOUR_NUMBER }},${{ secrets.YOUR_CARD }},${{ secrets.YOUR_BASICINFO }}
+          test(${{ secrets.YOUR_NUMBER }},${{ secrets.YOUR_CARD }},${{ secrets.YOUR_BASICINFO }})
           exit()
