@@ -92,7 +92,9 @@ number = os.environ.get('$number')
 card = os.environ.get('$card')
 basicinfo = os.environ.get('$basicinfo')
 
-cookies = getcookie(headers)
-login(cookies, headers, number, card)
-register(cookies, headers, basicinfo)
+def main(number,card,basicinfo):
+    cookies = getcookie(headers)
+    login(cookies, headers, number, card)
+    register(cookies, headers, basicinfo)
+
 exit()
