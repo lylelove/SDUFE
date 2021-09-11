@@ -37,7 +37,8 @@ jobs:
       # Runs a set of commands ing the runners shell
       - name: Run a multi-line script
         run: |
-          number：${{ secrets.YOUR_NUMBER }}
-          card：${{ secrets.YOUR_CARD }}
-          basicinfo：${{ secrets.YOUR_BASICINFO }}
+          python3
+          from main import test
+          test(${{ secrets.YOUR_NUMBER }},${{ secrets.YOUR_CARD }},${{ secrets.YOUR_BASICINFO }}
+          exit()
           python3 main.py
