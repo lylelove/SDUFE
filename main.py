@@ -89,12 +89,12 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gec
            'Accept': '*/*'}
 
 # 以下内容请自行修改
-number = 20190611509
+number = ${{ secrets.YOUR_NUMBER }}
 #学号
-card = '263232'
+card = ${{ secrets.YOUR_CARD }}
 #密码，一般为身份证后六位
 # 打卡基础信息，必填！
-basicinfo = 'name=%E5%88%98%E8%80%98%E9%BA%9F&sex=1&study_id=20190611509&college_id=407&address=input%28%27%E8%AF%B7%E8%BE%93%E5%85%A5%E5%AE%B6%E5%BA%AD%E4%BD%8F%E5%9D%80%EF%BC%9A%27%29&contact=17616108350&phone=17616108351&province_id=16&city_id=170&now_address=%E6%B5%8E%E5%8D%97%E5%B8%82%E7%AB%A0%E4%B8%98%E5%8C%BA&now_status=1&now_status_msg=&partition_time=&behavior=1&travel_address=&back_address=&travel_start=&travel_back=&travel_type=0&travel_number=&is_public=0&country_travel=0&travel_msg=&other_msg=&'
+basicinfo = ${{ secrets.YOUR_BASICINFO }}
 
 cookies = getcookie(headers)
 login(cookies, headers, number, card)
