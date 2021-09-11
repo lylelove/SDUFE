@@ -34,12 +34,10 @@ jobs:
         run: 
           pip install ddddocr
           pip install requests
-      - name: 'environment variable'
-        uses: actions/checkout@v1
-          number：${{ secrets.YOUR_NUMBER }}
-          card：${{ secrets.YOUR_CARD }}
-          basicinfo：${{ secrets.YOUR_BASICINFO }}
       # Runs a set of commands ing the runners shell
       - name: Run a multi-line script
         run: |
+          number：${{ secrets.YOUR_NUMBER }}
+          card：${{ secrets.YOUR_CARD }}
+          basicinfo：${{ secrets.YOUR_BASICINFO }}
           python3 main.py
