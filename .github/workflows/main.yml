@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: main
 
 # Controls when the workflow will run
 on:
@@ -9,6 +9,9 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  schedule:
+  # 定时任务，在每天的5点推送天气信息到邮箱
+    - cron: '0 21 * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
