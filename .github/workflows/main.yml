@@ -29,9 +29,9 @@ jobs:
       # Runs a set of commands ing the runners shell
       - name: environment variable and run
         env:
-            yournumber:${{secrets.YOUR_NUMBER}}
-            yourcard:${{secrets.YOUR_CARD}}
-            youbasicinfo:${{secrets.YOUR_BASICINFO}}
+            YOUR_NUMBER:${{secrets.YOUR_NUMBER}}
+            YOUR_CARD:${{secrets.YOUR_CARD}}
+            YOUR_BASICINFO:${{secrets.YOUR_BASICINFO}}
         run:
             python3 main.py
 
