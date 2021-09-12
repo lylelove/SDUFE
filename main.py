@@ -89,9 +89,9 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gec
            'Accept': '*/*'}
 
 
-number =
-card = ''
-basicinfo =''
+number =os.environ["yournumber"]
+card = os.environ["yourcard"]
+basicinfo =os.environ["yourbasicinfo"]
 
 cookies = getcookie(headers)
 login(cookies, headers, number, card)
