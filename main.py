@@ -88,13 +88,13 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gec
            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Host': 'bcfl.sdufe.edu.cn',
            'Accept': '*/*'}
 
+if __name__ == '__main__':
+    number =os.environ["YOUR_NUMBER"]
+    card = os.environ["YOUR_CARD"]
+    basicinfo =os.environ["YOUR_BASICINFO"]
 
-number =os.environ["YOUR_NUMBER"]
-card = os.environ["YOUR_CARD"]
-basicinfo =os.environ["YOUR_BASICINFO"]
+    cookies = getcookie(headers)
+    login(cookies, headers, number, card)
+    register(cookies, headers, basicinfo)
 
-cookies = getcookie(headers)
-login(cookies, headers, number, card)
-register(cookies, headers, basicinfo)
-
-exit()
+    exit()
