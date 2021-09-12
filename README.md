@@ -4,7 +4,7 @@
 
 #### basicinfo获取
 
-下载并打开basicinfo文件夹中的`getbasicinfo.py`,按要求完成后,将获得basicinfo.txt
+打开[本网页](https://lylelove.github.io/basicinfo.html)填写相关信息后复制。
 
 本项目暂不支持云函数
 
