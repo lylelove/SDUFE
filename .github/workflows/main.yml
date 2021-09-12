@@ -27,11 +27,12 @@ jobs:
           pip install ddddocr
           pip install requests
       # Runs a set of commands ing the runners shell
-      - name: Run a multi-line script
-        run: |
-          env:
+      - name: environment variable
+        env:
             yournumber:${{secrets.YOUR_NUMBER}}
             yourcard:${{secrets.YOUR_CARD}}
             youbasicinfo:${{secrets.YOUR_BASICINFO}}
-          python3 main.py
+      - name: run 
+        run:
+            python3 main.py
 
