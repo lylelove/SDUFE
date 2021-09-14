@@ -90,7 +90,7 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gec
            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Host': 'bcfl.sdufe.edu.cn',
            'Accept': '*/*'}
 
-number = sys.argv[1]
+number = eval(sys.argv[1])
 card = sys.argv[2]
 basicinfo = sys.argv[3]
 
