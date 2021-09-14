@@ -4,7 +4,7 @@
 
 #### basicinfo获取
 
-打开[本网页](https://lylelove.github.io/basicinfo.html)填写相关信息后填写到secrets中
+打开[本网页](https://lylelove.github.io/basicinfo.html)填写相关信息后，新建secrets包括YOUR_NUMBER，YOUR_CARD，YOUR_BASICINFO，分别填入学号，密码和刚刚网页得到的字符串。
 
 本项目暂不支持云函数
 
