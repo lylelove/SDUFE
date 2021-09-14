@@ -1,4 +1,5 @@
 # 山东财经大学疫情打卡自动化——基于Python requests、ddddOCR库
+![GitHub last commit](https://img.shields.io/github/last-commit/lylelove/SDUFE)
 
 本项目来源于[wangshouh/sdufe](https://github.com/wangshouh/sdufe)项目，在原项目基础上删除了通过百度智慧云获取验证码的方式，改为本地运行的ddddOCR通用验证码识别SDK免费开源版提供验证码识别功能。
 
