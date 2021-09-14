@@ -4,7 +4,7 @@
 
 #### basicinfo获取
 
-打开[本网页](https://lylelove.github.io/basicinfo.html)填写相关信息后复制。
+打开[本网页](https://lylelove.github.io/basicinfo.html)填写相关信息后填写到secrets中
 
 本项目暂不支持云函数
 
