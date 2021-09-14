@@ -2,7 +2,7 @@ import requests
 import io
 import json
 import base64
-from PIL import Image
+
 import ddddocr
 import os
 import sys
