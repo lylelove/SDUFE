@@ -4,11 +4,15 @@
 
 本项目来源于[wangshouh/sdufe](https://github.com/wangshouh/sdufe)项目，在原项目基础上删除了通过百度智慧云获取验证码的方式，改为本地运行的ddddOCR通用验证码识别SDK免费开源版提供验证码识别功能。
 
-#### basicinfo获取
-
-打开[本网页](https://lylelove.github.io/basicinfo.html)填写相关信息后，新建secrets包括YOUR_NUMBER，YOUR_CARD，YOUR_BASICINFO，分别填入学号，密码和刚刚网页得到的字符串。
-
 本项目支持github action.
+
+#### github action构建
+
+fork本项目后，打开[本网页](https://lylelove.github.io/basicinfo.html)填写相关信息后，新建secrets包括YOUR_NUMBER，YOUR_CARD，YOUR_BASICINFO，分别填入学号，密码和刚刚网页得到的字符串。
+
+打开action，enable them和Enable workflow后需Run workflow一次方可成功。
+
+
 
 
 #### 许可证声明：
