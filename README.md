@@ -1,4 +1,7 @@
-# 山东财经大学疫情打卡自动化——基于Python requests、ddddOCR库
+![](https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/baike/pic/item/c83d70cf3bc79f3d81a3998ebaa1cd11738b29c9.jpg)
+
+# [山东财经大学疫情打卡自动化——基于Python requests、ddddOCR库](https://github.com/lylelove/SDUFE)
+
 ![GitHub last commit](https://img.shields.io/github/last-commit/lylelove/SDUFE)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/lylelove/SDUFE)  
 
