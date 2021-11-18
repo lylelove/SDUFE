@@ -1,4 +1,4 @@
-![](https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/baike/pic/item/c83d70cf3bc79f3d81a3998ebaa1cd11738b29c9.jpg)
+![[object Object]](https://socialify.git.ci/lylelove/SDUFE/image?description=1&font=Bitter&forks=1&language=1&name=1&owner=1&pattern=Charlie%20Brown&stargazers=1&theme=Dark)
 
 # [山东财经大学疫情打卡自动化——基于Python requests、ddddOCR库](https://github.com/lylelove/SDUFE)
 
