@@ -11,7 +11,7 @@
 
 #### github action构建
 
-fork本项目后，打开[本网页](https://lylelove.tk/index.php/sdufe/)填写相关信息后，新建secrets包括YOUR_NUMBER，YOUR_CARD，YOUR_BASICINFO，分别填入学号，密码和刚刚网页得到的字符串。
+fork本项目后，打开[本网页](https://www.lylelove.top/sdufe.html)填写相关信息后，新建secrets包括YOUR_NUMBER，YOUR_CARD，YOUR_BASICINFO，分别填入学号，密码和刚刚网页得到的字符串。
 
 打开action，enable them和Enable workflow后需Run workflow一次方可成功。
 
