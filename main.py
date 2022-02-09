@@ -33,7 +33,7 @@ def getcookie(headers):
     '''
     url = 'http://bcfl.sdufe.edu.cn/index/login'
     with requests.Session() as s:
-        r = s.get(url, headers=headers)
+        r = s.post(url, headers=headers)
         cookies = {'PHPSESSID': requests.utils.dict_from_cookiejar(s.cookies)['PHPSESSID']}
     return cookies
 
@@ -51,7 +51,7 @@ def login(cookies, headers, number, card):
             verify = getverify()
             print(verify)
             data = 'number={}&card={}&verify={}'.format(number, card, verify)
-            response = requests.get(url=loginurl, headers=headers, data=data, cookies=cookies)
+            response = requests.post(url=loginurl, headers=headers, data=data, cookies=cookies)
             logincode = response.json()['code']
         except:
             logincode = 201
