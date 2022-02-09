@@ -74,7 +74,7 @@ def register(cookies, headers, basicinfo):
             verify = getverify()
             print(verify)
             info = basicinfo + 'verify={}'.format(verify)
-            response = requests.get(url=registerurl, headers=headers, data=info, cookies=cookies)
+            response = requests.post(url=registerurl, headers=headers, data=info, cookies=cookies)
             registercode = response.json()['code']
         except:
             verifycode = 201
